@@ -44,15 +44,12 @@ console.log("test of")
     this.myService.login(this.registerForm.value).subscribe(
       (res:any)  =>{
 
-if(res['status']==='active'){
   this.myService.setToken(res['token'])
   this.myService.setRole(res['role'])
- this.router.navigate(['userProfile',  { id: this.myService.getUserPayload().id}])
-}else if (res['status']==='blocked'){
-  this.serverErrorMessages="vous etes bloquer "
-}
+ this.router.navigate(['/userProfile',  { id: this.myService.getUserPayload().id}])
 
-      },
+
+},
       err =>{
          this.serverErrorMessages=err.error.message
          console.log(err)
