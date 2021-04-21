@@ -48,7 +48,7 @@ if(res['status']==='active'){
   this.myService.setToken(res['token'])
   this.myService.setRole(res['role'])
  this.router.navigate(['userProfile',  { id: this.myService.getUserPayload().id}])
-}else {
+}else if (res['status']==='blocked'){
   this.serverErrorMessages="vous etes bloquer "
 }
 
