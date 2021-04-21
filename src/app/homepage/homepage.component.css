@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #01a67c;
+  width: 100%;
+}
+/* main right styles--------------------------------------- */
+.main-right-content {
+  background-color: #01a67c;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+}
+.main-right-content > h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.main-right-content > p {
+  text-align: center;
+  padding: 10px;
+  line-height: 1.6rem;
+}
+.main-right-content > a {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #01a67c;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.main-right-content > a:hover {
+  color: white;
+  background-color: #006f7b;
+}
+
+/* main left styles----------------------------------------------------- */
+.main-left-bg {
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+  background-color: #068162;
+  height: 280px;
+  width: 100%;
+}
+.main-left {
+  position: relative;
+  height: 100%;
+  clip-path: polygon(0 0, 65% 0, 100% 100%, 0 100%);
+  background-image: url('../../assets/images/main-left.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-left-icons {
+  height: 100%;
+  clip-path: polygon(0 0, 65% 0, 100% 100%, 0 100%);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+.main-left-icons > div {
+  display: flex;
+  color: white;
+  align-items: flex-end;
+}
+.main-left-icons div:first-child {
+  border-bottom: 10px solid #006f7b;
+  /* padding-bottom: 5px; */
+  justify-content: center;
+  flex: 0.9;
+}
+.main-left-icons div:nth-child(2) {
+  border-bottom: 10px solid #068162;
+  /* padding-bottom: 5px; */
+  justify-content: center;
+  flex: 1.1;
+}
+.main-left-icons img {
+  margin-right: 5px;
+  height: 40px;
+}
+.main-left-icons p,
+.main-left-icons a {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.main-left-icons a:hover {
+  cursor: pointer;
+  color: #01a67c;
+}
+
+/* pray time section ---------------------------------------- */
+.pray-time {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.795)),
+    url('../../assets/images/texture.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.prayer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  flex: 1;
+}
+.prayer-name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.prayer > p:first-child {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.prayer > p:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.search-box {
+  color: white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time-left {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.search-input {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px 0 25px;
+  overflow: hidden;
+  padding-left: 5px;
+}
+.search-input > img {
+  height: 35px;
+}
+.search-input > input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+.search-box > p:last-child {
+  margin-top: 10px;
+}
+.two-times {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid white;
+}
+
+/* details offres section --------------------------------- */
+
+.details {
+  background-image: url('../../assets/images/body-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.phone-img {
+  height: 300px;
+}
+.details-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0;
+}
+.details-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.details-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details-header > h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.details-header > p {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 30px;
+}
+.two-cards {
+  width: 100%;
+}
+.detail-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+.card-text {
+  width: 150%;
+  padding: 10px 20px;
+}
+.card-text > p {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+.detail-card > img {
+  height: auto;
+  width: 60px;
+}
+.down-btn {
+  background-color: #01a67c;
+  margin: 20px 0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.down-btn:hover {
+  background-color: #068162;
+}
+
+
+@media (min-width: 440px) {
+  /* main left styles----------------------------------------------------- */
+  .main-left-bg {
+    height: 320px;
+  }
+}
+@media (min-width: 480px) {
+  /* navbar styles ------------------------------------------*/
+  .navbar {
+    height: 60px;
+  }
+  .logo {
+    height: 35px;
+  }
+  .left-menu {
+    top: 60px;
+  }
+
+  .store-btn {
+    display: block;
+    margin: 0 20px;
+    padding: 10px 15px;
+  }
+  /* main left styles----------------------------------------------------- */
+  .main-left-bg {
+    height: 400px;
+  }
+  .main-left-icons {
+    width: 480px;
+  }
+  /* pray time section ---------------------------------------- */
+  .search-box {
+    padding: 30px;
+  }
+  /* details offres section --------------------------------- */
+  .detail-card {
+    padding: 30px;
+  }
+  .card-text {
+    padding: 10px;
+    width: auto;
+    margin-left: 50px;
+  }
+
+}
+
+@media (min-width: 660px) {
+  /* main left styles----------------------------------------------------- */
+  .main-left-bg {
+    height: 470px;
+  }
+}
+@media (min-width: 768px) {
+  /* main content styles------------------------------------- */
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  /* main left styles----------------------------------------------------- */
+  .main-left-icons {
+    width: 90%;
+  }
+
+  .main-left-bg {
+    flex: 1.3;
+  }
+  /* main right styles--------------------------------------- */
+  .main-right {
+    position: relative;
+    flex: 0.7;
+    padding: 0;
+  }
+  .main-right-content {
+    padding: 0;
+    height: 100%;
+    background-color: transparent;
+
+    right: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-right-content > h1 {
+    width: 300px;
+
+    font-size: 2.5rem;
+  }
+  .main-right-content > p {
+    padding: 10px;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  /* pray time section ---------------------------------------- */
+  .pray-time {
+    flex-direction: row;
+    align-items: center;
+  }
+  /*.prayer {
+     border: 2px solid orange;
+  } */
+  .prayer p {
+    margin: 10px;
+    text-align: center;
+  }
+  .prayers-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid white;
+  }
+  .search-box {
+    flex: 1;
+  }
+  .two-times {
+    /* border: 2px solid blue; */
+    border: none;
+    padding: 0;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+
+  /* main right styles--------------------------------------- */
+  .main-right {
+    flex: 0.7;
+  }
+  .main-right-content {
+    right: 30px;
+    align-items: center;
+  }
+  .main-right-content > h1 {
+    width: 480px;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .main-right-content > p {
+    padding: 10px;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  /* main left styles----------------------------------------------------- */
+  .main-left-icons {
+    width: 630px;
+  }
+  .main-left-bg {
+    height: 550px;
+  }
+  .main-left-bg {
+    flex: 1.3;
+  }
+  .main-left-icons div:first-child {
+    border-bottom: 10px solid #006f7b;
+    /* padding-bottom: 10px; */
+    justify-content: center;
+    flex: 0.9;
+  }
+  .main-left-icons div:nth-child(2) {
+    border-bottom: 10px solid #068162;
+    /* padding-bottom: 10px; */
+    justify-content: center;
+    flex: 1.1;
+  }
+  .main-left-icons img {
+    margin-right: 10px;
+    height: 50px;
+  }
+  .main-left-icons p,
+  .main-left-icons a {
+    font-size: 1rem;
+  }
+  /* pray time section ---------------------------------------- */
+
+  .prayer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px 0;
+    width: 100%;
+    border-left: 1px solid white;
+  }
+
+  .prayers-group {
+    flex-direction: row;
+    align-self: stretch;
+    width: 100%;
+    border: none;
+  }
+
+  .search-box {
+    flex: 0;
+  }
+
+  .two-times {
+    display: flex;
+    border-top: none;
+    width: 100%;
+  }
+
+  /* details offres section --------------------------------- */
+  .details-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    position: relative;
+    max-width: 1500px;
+  }
+
+  .details-cards {
+    padding: 20px 30px;
+    width: 100%;
+    position: relative;
+    left: -5%;
+  }
+  .two-cards {
+    display: flex;
+    margin: 20px 0;
+  }
+  .details-header > p {
+    padding: 30px 30px 0;
+  }
+
+  .phone-img {
+    height: 600px;
+    min-height: 600px;
+    min-width: auto;
+    position: relative;
+    left: -5%;
+  }
+
+  .detail-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 300px;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .card-text {
+    width: 150%;
+    padding: 10px 10px;
+    margin-left: 10px;
+  }
+  .card-text > p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    line-height: 1.5;
+  }
+  .detail-card > img {
+    height: auto;
+    width: 80px;
+  }
+  .down-btn {
+    background-color: #01a67c;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+}

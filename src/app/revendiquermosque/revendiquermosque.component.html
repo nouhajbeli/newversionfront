@@ -1,0 +1,133 @@
+<!--
+  <div>
+    <mat-card id="mat-card" SSclass="example-card">
+      <mat-card-header>
+
+        <mat-card-title>Revendiquer Mosque</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <form class="example-form" [formGroup]="mosqueForm">
+
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Nom Mosque" formControlName="mMosqueName" required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Association Mosque" formControlName="mMosqueAssociation" required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Site Web Mosque" formControlName="mMosqueSiteweb" required>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Imam Mosque" formControlName="mMosqueImam" required>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Adresse Mosque" formControlName="mMosqueAdresse" required>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Telephone Mosque" formControlName="mMosqueTelephone" required>
+              </mat-form-field>
+        </form>
+
+      </mat-card-content>
+      <mat-card-actions style="text-align: end;">
+          <button mat-raised-button color="primary" (click)="envoyerform();">Envoyer Information</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+-->
+
+
+<div class="cont" style="margin-bottom: 50vh">
+  <div class="row rev">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 style="color: #01a67c; text-align: center;"> <b> <i>Demande revendiquer {{mosque?.nomMosquee}}</i> </b></h1>
+
+      <form action="" method="POST" [formGroup]="emailForm">
+        <div class="form-group">
+          <label for="title">Nom association <span class="require">*</span></label>
+          <input
+            type="text"
+            formControlName="association"
+            class="form-control"
+            name="association"
+          />
+          <div *ngIf="f.association.errors.required">Veuillez entrer association</div>
+        </div>
+        <div class="form-group">
+          <label for="title">Nom président <span class="require">*</span></label>
+          <input
+            type="text"
+            formControlName="president"
+            class="form-control"
+            name="president"
+          />
+        </div>
+        <div class="form-group">
+          <label for="title">Prénom <span class="require">*</span></label>
+          <input
+            type="text"
+            formControlName="prenom"
+            class="form-control"
+            name="prenom"
+          />
+        </div>
+        <div class="form-group">
+          <label for="title">Adresse <span class="require">*</span></label>
+          <input
+            type="text"
+            formControlName="adresse"
+            class="form-control"
+            name="adresse"
+          />
+        </div>
+        <div class="form-group">
+          <label for="title">Numéro téléphone <span class="require">*</span></label>
+          <input
+            type="text"
+            formControlName="telephone"
+            class="form-control"
+            name="telephone"
+          />
+        </div>
+        <div class="form-group">
+          <label for="title">Email<span class="require">*</span></label>
+          <input
+            type="text"
+            formControlName="email"
+            class="form-control"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="title">Piéce justificatve<span class="require">*</span></label>
+          <input
+            type="file"
+            formControlName="piece"
+            class="form-control"
+            name="piece"
+          />
+        </div>
+
+      <!--  <div class="form-group" style="display: flex">
+          <button
+            type="submit"
+            class="btn"
+            (click)="sendMail()"
+            *ngIf="!isLoading"
+            style="background-color: #00cc74;"
+          >
+            send
+          </button>
+          <h4
+            *ngIf="isSent"
+            style="color: rgb(42, 218, 136); margin-left: 10px"
+          >
+            email sent!
+          </h4>
+        </div>-->
+      </form>
+    </div>
+  </div>
+</div>
