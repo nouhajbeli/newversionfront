@@ -90,7 +90,7 @@ const routes: Routes = [
   },
   {
     path: 'sign-up',
-    component: SignupComponent,canActivate:[AuthGuard]
+    component: SignupComponent
   },
   {
     path: 'reset-password',
